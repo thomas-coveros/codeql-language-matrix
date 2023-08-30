@@ -22,12 +22,6 @@ jobs:
       matrix:
         language: [ 'go', 'java', 'javascript', 'python' ]
 
-    permissions:
-      # required for all workflows
-      security-events: write
-      actions: read
-      contents: read
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
